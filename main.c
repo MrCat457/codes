@@ -1,6 +1,6 @@
-/*#include <stdio.h>
+#include <stdio.h>
 #define endl printf("\n")
-int main()
+int main() 
 {
     int num = 100;
     float decimal = 2.71828;
@@ -9,7 +9,7 @@ int main()
     void *pointer = &num;
     printf("integer in decimal format %d", num);
     endl;
-    printf("an integer in binary format %d", num); 
+    printf("integer in binary format %b", num);
     endl;
     printf("integer in octal format %o", num);
     endl;
@@ -27,7 +27,7 @@ int main()
     endl;
     printf("pointer %p", pointer);
     endl;
-}*/
+}
 
 
 #include <stdio.h>
