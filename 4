@@ -1,0 +1,92 @@
+#include <stdio.h>
+int main() 
+{
+   int a = 7, b = 2;
+   int result;
+   printf("A = %d, B = %d\n", a, b);
+   result = a + b;
+   printf("A + B = %d\n", result);
+   result = a - b;
+   printf("A - B = %d\n", result);
+   result = a * b;
+   printf("A * B = %d\n", result);
+   result = a / b;
+   printf("A / B = %d\n", result);
+   result = a % b;
+   printf("A %% B = %d\n", result); 
+   printf("\nПобітові операції: \n");
+   result = ~a & b;
+   printf("A & B = %d (Побітове AND)\n", result);
+   result = ~a | b;
+   printf("The result in binary is: %b\n", result);
+   printf("A | B = %d (Побітове OR)\n", result);
+   printf("The result in binary is: %b\n", result);
+   result = ~a ^ b;
+   printf("A ^ B = %d (Побітове XOR)\n", result);
+   printf("The result in binary is: %b\n", result);
+   result = ~a;
+   printf("~A = %d (Побітове NOT)\n", result);
+   printf("The result in binary is: %b\n", result);
+   result = ~a << 1;
+   printf("A << 1 = %d (Зсув вліво на 1 біт)\n", result);
+   printf("The result in binary is: %b\n", result);
+   result = ~a >> 1;
+   printf("A >> 1 = %d (Зсув вправо на 1 біт)\n", result);
+   printf("The result in binary is: %b", result);
+}
+
+
+
+//2 ex
+//#include <stdio.h>
+//int main()
+//{
+//     int a;              
+//     int *ptr = &a;    
+//     printf("Введіть число: ");
+//     scanf("%d", ptr);  
+//     printf("Введене число: %d\n", *ptr);           
+//     printf("Адреса пам'яті числа: %p\n", (void*)&a); 
+//}
+
+
+//3 ex
+
+//#include <stdio.h>
+//int main() 
+//{
+//    double a, b, c;
+//    double discriminant, root1, root2;
+//    printf("Введіть коефіцієнти квадратного рівняння (a, b, c): ");
+//    scanf("%lf %lf %lf", &a, &b, &c);
+//    if (a == 0) {
+//        printf("Коефіцієнт 'a' не може бути рівним нулю. Це не квадратне рівняння.\n");
+//        return 1;
+//    }
+//    discriminant = b * b - 4 * a * c;
+//    if (discriminant > 0)
+//    {
+//        root1 = (-b + sqrt(discriminant)) / (2 * a);
+//        root2 = (-b - sqrt(discriminant)) / (2 * a);
+//        printf("Два дійсних корені:\n");
+//        printf("x1 = %.2lf\n", root1);
+//        printf("x2 = %.2lf\n", root2);
+//    }
+//    else if (discriminant == 0)
+//    {
+//        root1 = -b / (2 * a);
+//        printf("Один дійсний корінь:\n");
+//        printf("x = %.2lf\n", root1);
+//   } 
+//   else
+//    {
+//        double realPart = -b / (2 * a);
+//        double imaginaryPart = sqrt(-discriminant) / (2 * a);
+//        printf("Комплексні корені:\n");
+//        printf("x1 = %.2lf + %.2lfi\n", realPart, imaginaryPart);
+//        printf("x2 = %.2lf - %.2lfi\n", realPart, imaginaryPart);
+//    }
+//}
+
+
+
